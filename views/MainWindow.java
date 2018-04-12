@@ -41,7 +41,7 @@ public class MainWindow extends JFrame{
 	public void init(Controller controller) {
 		imageBtnFolder = new ImageIcon("src/images/Folder.png");
 		btnFolder = new JButton(imageBtnFolder);
-		btnFolder.setBackground(Color.WHITE);
+		btnFolder.setBackground(Color.GRAY);
 		btnFolder.addActionListener(controller);
 		btnFolder.setActionCommand(Events.SELECT_FOLDER.toString());
 		btnFolder.setFocusable(false);

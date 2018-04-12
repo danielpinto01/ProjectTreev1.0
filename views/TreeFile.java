@@ -42,10 +42,10 @@ public class TreeFile extends JTree{
 	}
 
 	public void cleanTreeFile(){
+		revalidate();
+		repaint();
 		defaultMutableTreeNode = null;
 		defaultTreeModel = null;
 		removeAll();
-		repaint();
-		revalidate();
 	}
 }
